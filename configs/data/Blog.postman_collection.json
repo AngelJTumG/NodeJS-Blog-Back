@@ -133,6 +133,77 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Coments",
+			"item": [
+				{
+					"name": "addComent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"postId\": \"681f8a8a5ce40a60cc757c95\",\r\n  \"username\": \"Angel\",\r\n  \"content\": \"Me gusto mucho el trabajo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/Blog/v1/comentario/addComent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"Blog",
+								"v1",
+								"comentario",
+								"addComent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comentId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"postId\": \"681f8a8a5ce40a60cc757c95\",\r\n  \"username\": \"Angel\",\r\n  \"content\": \"Me gusto mucho el trabajo\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/Blog/v1/comentario/681f8a8a5ce40a60cc757c95",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"Blog",
+								"v1",
+								"comentario",
+								"681f8a8a5ce40a60cc757c95"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
