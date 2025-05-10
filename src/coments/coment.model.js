@@ -2,8 +2,8 @@ import { Schema, model } from 'mongoose';
 
 const commentSchema = Schema({
     postId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Post',
+    type: Schema.Types.ObjectId,
+    ref: 'Publicacion',
     required: true
   },
   username: {
@@ -22,6 +22,10 @@ const commentSchema = Schema({
   }
 });
 
-
+commentSchema.methods.toJSON = function () {
+  const { _id, __v, ...comment } = this.toObject();
+  comment.uid = _id;
+  return comment;
+}
 
 export default model('Comment', commentSchema);
