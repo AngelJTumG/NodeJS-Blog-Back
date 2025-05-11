@@ -1,0 +1,130 @@
+[{
+  "_id": {
+    "$oid": "682107f23aa19f5dfffbf8fe"
+  },
+  "title": "Agenda Web",
+  "description": "Creamos una agenda web para poder almacenar contactos y ver su informacion",
+  "course": "Practicas",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-11T20:26:26.979Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682108393aa19f5dfffbf900"
+  },
+  "title": "Administracion de alumnos",
+  "description": "Llevamos el control de los alumnos de la parte de backend para una institucion academica",
+  "course": "Practicas",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-11T20:27:37.205Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682108eb3aa19f5dfffbf902"
+  },
+  "title": "Gestor de opiniones",
+  "description": "Era una api como facebook que poermitia al usuario ver post y poder reaccionar a ellos",
+  "course": "Practicas",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-11T20:30:35.627Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682109563aa19f5dfffbf904"
+  },
+  "title": "Evaluacion Bimestral",
+  "description": "Se promedio la nota de ambos cursos de tecnologia y taller",
+  "course": "Practicas",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-11T20:32:22.438Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68210ae13aa19f5dfffbf906"
+  },
+  "title": "Pagina web",
+  "description": "Se hizo una pagina donde pusimos lo que mas nos guistaba y una biografia de nosotros junto a un rediseño de la pagioona de kinal",
+  "course": "Taller",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-11T20:38:57.753Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68210b573aa19f5dfffbf908"
+  },
+  "title": "COPEREX",
+  "description": "Gestion de una empresa con autentificaciones y descargar un formato excel",
+  "course": "Taller",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-11T20:40:55.249Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68210bce3aa19f5dfffbf90a"
+  },
+  "title": "Evaluacion Ténica ",
+  "description": "Gestion de publicaciones con backend y frontend",
+  "course": "Taller",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-11T20:42:54.721Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68210cb43aa19f5dfffbf90d"
+  },
+  "title": "Infografia",
+  "description": "HTML, CSS PreProcesadores ",
+  "course": "Tecnología",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-11T20:46:44.273Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68210cf73aa19f5dfffbf90f"
+  },
+  "title": "Mapa Conceptaul",
+  "description": "Tecnologias para backend ",
+  "course": "Tecnología",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-11T20:47:51.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68210d013aa19f5dfffbf911"
+  },
+  "title": "Mapa Mental",
+  "description": "Tecnologias para Frontend ",
+  "course": "Tecnología",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-11T20:48:01.651Z"
+  },
+  "__v": 0
+}]
