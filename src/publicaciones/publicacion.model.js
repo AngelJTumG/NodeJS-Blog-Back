@@ -15,7 +15,7 @@ const publicacionesSchema = Schema ({
         required: [ true],
         enum: ["Tecnología", "Practicas", "Taller" ]
     },
-    createAdAt: {
+    createdAt: {
         type: Date,
         default: Date.now
     },
@@ -26,9 +26,9 @@ const publicacionesSchema = Schema ({
 });
  
 publicacionesSchema.methods.toJSON = function () {
-        const {_id, _status, ...publicaciones } = this.toObject();
-        publicaciones.uid = _id;
-        return publicaciones;
-}
+  const { _id, ...publicaciones } = this.toObject();
+  publicaciones._id = _id;
+  return publicaciones;
+};
  
 export default model("Publicacion", publicacionesSchema);
