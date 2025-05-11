@@ -56,11 +56,13 @@ export const visualizarDetalle = async (req, res) => {
 };
 
 export const ordenarPorFecha = async (req, res) => {
-    try {
-        const { order } = req.query; 
-        const publicaciones = await Publicacion.find().sort({ createAd: order === "asc" ? 1 : -1 });
-        res.status(200).json(publicaciones);
-    } catch (error) {
-        res.status(500).json({ message: "Error al ordenar las publicaciones", error });
-    }
+  try {
+    const { order } = req.query;
+    const publicaciones = await Publicacion.find().sort({
+      createdAt: order === "asc" ? 1 : -1
+    });
+    res.status(200).json(publicaciones);
+  } catch (error) {
+    res.status(500).json({ message: "Error al ordenar las publicaciones", error });
+  }
 };
