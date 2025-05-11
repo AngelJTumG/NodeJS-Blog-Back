@@ -6,14 +6,10 @@ import cors from "cors"
 import helmet from "helmet"
 import { dbConnection } from "./mongo.js";
 import { swaggerDocs, swaggerUi } from "./swagger.js";
-import rateLimit from "express-rate-limit";
+import publicacionRouter from "../src/publicaciones/publicacion.routes.js";
+import comentRouter from "../src/coments/coment.routes.js";
+import apiLimiter from "../src/midlewares/rate-limit-validator.js"
 
-
-const apiLimiter = rateLimit({
-    windowMs: 15 * 60 * 1000, 
-    max: 100, 
-    message: "Demasiadas solicitudes desde esta IP, por favor intenta de nuevo más tarde."
-});
 
 const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false }));
@@ -26,6 +22,8 @@ const middlewares = (app) => {
 
 const routes = (app) => {
     app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+    app.use("/Blog/v1/publicacion", publicacionRouter);
+    app.use("/Blog/v1/comentario", comentRouter);
 };
 
 const conectarDB = async () => {

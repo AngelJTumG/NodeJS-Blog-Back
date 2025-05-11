@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "6c0ddc76-e2ed-4d66-aaca-2e918353e307",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38544411"
+	},
+	"item": [
+		{
+			"name": "Publicaciones",
+			"item": [
+				{
+					"name": "AddPubli",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Título de la publicación\",\r\n  \"description\": \"Descripción de la publicación\",\r\n  \"course\": \"Tecnología\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/Blog/v1/publicacion/addPubli",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"Blog",
+								"v1",
+								"publicacion",
+								"addPubli"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListPubli",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3001/Blog/v1/publicacion/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"Blog",
+								"v1",
+								"publicacion",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filtrar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3001/Blog/v1/publicacion/filtrar?course=Taller",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"Blog",
+								"v1",
+								"publicacion",
+								"filtrar"
+							],
+							"query": [
+								{
+									"key": "course",
+									"value": "Taller"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IdPubli",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3001/Blog/v1/publicacion/681d7586e4cc2f49832225fe",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"Blog",
+								"v1",
+								"publicacion",
+								"681d7586e4cc2f49832225fe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FechaReciente",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coments",
+			"item": [
+				{
+					"name": "addComent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"postId\": \"681f8a8a5ce40a60cc757c95\",\r\n  \"username\": \"Angel\",\r\n  \"content\": \"Me gusto mucho el trabajo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/Blog/v1/comentario/addComent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"Blog",
+								"v1",
+								"comentario",
+								"addComent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comentId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"postId\": \"681f8a8a5ce40a60cc757c95\",\r\n  \"username\": \"Angel\",\r\n  \"content\": \"Me gusto mucho el trabajo\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/Blog/v1/comentario/681f8a8a5ce40a60cc757c95",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"Blog",
+								"v1",
+								"comentario",
+								"681f8a8a5ce40a60cc757c95"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
